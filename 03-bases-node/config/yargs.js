@@ -11,6 +11,11 @@ const argv = require('yargs')
                     default: false,
                     describe: 'Muestra la tabla en consola'
                 })
+                .option('h', {
+                    alias: 'hasta',
+                    type: 'number',
+                    describe: 'Índice multiplicador máximo mostrado en la tabla de multiplicar'
+                })
                 .check( (argv, options) => {
                     if( isNaN( argv.b ) ){
                         throw 'La base tiene que ser un número'
