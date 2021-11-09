@@ -1,5 +1,5 @@
 const fs = require('fs');
-var colors = require('colors');
+const colors = require('colors');
 
 const crearArchivo = async( {base = 5, listar = false} ) => {
     
